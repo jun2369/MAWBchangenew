@@ -30,7 +30,7 @@
             const input = document.getElementById('inputNumbers').value.trim();
             const lines = input.split('\n').filter(line => line.trim() !== '');
             const numbers = lines.map(num => `${num.trim()}`);
-            const result = numbers.join(', '); // 移除 $，直接使用 join
+            const result = numbers.join(', ');
             document.getElementById('result').innerText = result;
         }
     </script>
