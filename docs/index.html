@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GEMINI PTT Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      color: #000;
+      background: #fff;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto 0 auto;
+      padding-top: 15px;
+    }
+    .logo {
+      width: 160px;
+      float: left;
+      margin-right: 20px;
+      margin-top: -40px;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      margin-left: 295px;
+    }
+    .form-section {
+      clear: both;
+      margin-top: 30px;
+    }
+    .title {
+      font-weight: bold;
+      margin: 30px 0 20px 0;
+      text-transform: none;
+      font-size: 14px;
+    }
+    .subtitle {
+      margin-top: 10px;
+      margin-bottom: 4px;
+      line-height: 1.0;
+    }
+    .instruction {
+      margin-top: 0;
+      margin-bottom: 20px;
+      line-height: 1.35;
+    }
+    .row {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: baseline;
+    }
+    .row span.label {
+      font-weight: bold;
+      min-width: 185px;
+    }
+    .row.firms-code {
+      margin-top: -30px;
+    }
+    .row span.line {
+      border-bottom: 2px solid #000;
+      flex-grow: 0;
+      width: 300px;
+      margin-left: 50px;
+      max-width: 100%;
+    }
+    .cargo-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      border: 3px solid;
+    }
+    .cargo-table th,
+    .cargo-table td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 8px;
+      font-size: 14px;
+      height: 40px;
+    }
+    .cargo-table th {
+      background-color: #fff;
+      font-weight: bold;
+    }
+    .cargo-table .narrow-column {
+      width: 100px;
+    }
+    .cargo-table .wide-column {
+      width: 180px;
+    }
+    .delivery-section {
+      margin-top: -11px;
+      font-size: 13px;
+    }
+    .return-airline {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-weight: 0;
+      margin-top: -20px;
+      margin-bottom: -2px;
+      margin-left: -10px;
+    }
+    .return-label {
+      margin-right: 165px;
+    }
+    .return-airline .underline {
+      border-bottom: 1px solid black;
+      width: 295px;
+      margin-top: 3px;
+    }
+    .divider-line {
+      border-bottom: 1px solid #000;
+      margin: 8px 0 12px 0;
+      width: 100%;
+    }
+    .sig-8888 {
+      border: 3px solid black;
+      padding: 10px 0;
+      font-size: 12px;
+      font-weight: bold;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+    .sig-8888 .sig-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .sig-8888 .sig-col {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      width: 50%;
+    }
+    .sig-8888 .sig-line {
+      display: inline-block;
+      border-bottom: 1px solid #555;
+      width: 240px;
+      height: 1em;
+    }
+    .sig-8888 .sig-line.long {
+      width: 250px;
+    }
+    .sig-8888 .shift-right strong {
+      margin-left: 10px;
+    }
+    .signature-blocks {
+      width: 100%;
+      margin-top: 5px;
+    }
+    .signature-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+      margin-bottom: 30px;
+      margin-top: -10px;
+    }
+    .signature-cell {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .signature-name {
+      margin-bottom: 5px;
+    }
+    .signature-image {
+      height: 40px;
+      display: block;
+      margin-left: -10px;
+      margin-top: 12px;
+    }
+    .signature-line {
+      border-bottom: 2px solid #000;
+      height: 1em;
+      width: 100%;
+      margin-bottom: 3px;
+      margin-top: -10px;
+    }
+    .signature-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://raw.githubusercontent.com/jun2369/MAWBchangenew/main/docs/c589ac709a4e12b3ba645999c32659e.png" alt="Logo" class="logo" />
+      <h1>GEMINI EXPRESS TRANSPORT CORP.</h1>
+    </header>
+    <section class="form-section">
+      <div class="row DATE">
+        <span class="label">DATE:</span>
+        <span class="line"></span>
+      </div>
+      <p class="title">APPLICATION AND PERMIT TO TRANSFER CONTAINERIZED CARGO TO A CONTAINER STATION</p>
+      <div class="row"><span class="label">FROM:</span><span class="line"></span></div>
+      <div class="row"><span class="label">TRUCKING:</span><span class="line"></span></div>
+      <br><br>
+      <div class="row firms-code">
+        <span class="label">To: GEMINI EXPRESS TRANSPORT CORP. FIRMS CODE:</span>
+        <strong style="margin-left: 8px; font-size: 40px; line-height: 1;">HBT1</strong>
+      </div>
+      <br>
+      <p class="subtitle">TO: DISTRICT DIRECTOR OF CUSTOMS</p>
+      <p class="instruction">APPLICATION IS MADE TO TRANSFER THE CONTAINERS AND THEIR CONTENTS LISTED BELOW TO <br><strong>GEMINI EXPRESS TRANSPORT CORP.</strong> (CONTAINER STATION). AN ABSTRACT OF THE CARRIERS MANIFEST COVERING THE CONTENTS IS ATTACHED.</p>
+    </section>
+    <table class="cargo-table">
+      <thead>
+        <tr>
+          <th>ULD TYPE & NO</th>
+          <th>NO. OF PCS</th>
+          <th class="narrow-column">CARRIER & FLT NO.</th>
+          <th class="wide-column">AWB NO.</th>
+          <th>WEIGHT</th>
+          <th>CONSIGNOR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <div class="delivery-section">
+      <p>
+	<strong>DELIVERED TO: GEMINI EXPRESS TRANSPORT CORP.</strong>: 2701 BUSSE ROAD, Elk Grove, IL 60007
+      </p>
+      <div class="delivery-note">
+	<span>IN APPARENT GOOD ORDER AND CONDITION EXCEPT AS NOTED:</span>
+	<div class="return-airline">
+          <strong class="return-label">RETURN TO AIRLINE</strong>
+          <div class="underline"></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="divider-line"></div>
+
+
+    <div class="sig-8888">
+      <div class="sig-row">
+        <div class="sig-col shift-right"><strong>Received By:</strong><span class="sig-line"></span></div>
+        <div class="sig-col"><strong>Date/Time:</strong><span class="sig-line"></span></div>
+      </div>
+      <div class="sig-row">
+        <div class="sig-col shift-right"><strong>Loose pcs:</strong><span class="sig-line"></span></div>
+        <div class="sig-col"><strong>No. of Pallets:</strong><span class="sig-line"></span></div>
+      </div>
+      <div class="sig-row">
+        <div class="sig-col shift-right"><strong>Breakdown Complete By:</strong><span class="sig-line long"></span></div>
+      </div>
+    </div>
+    <div class="signature-blocks">
+      <div class="signature-row">
+        <div class="signature-cell">
+          <div class="signature-name">
+            <img src="https://raw.githubusercontent.com/jun2369/MAWBchangenew/main/docs/b134b076058df762f53148378855766.png" alt="Signature" class="signature-image" />
+          </div>
+          <div class="signature-line"></div>
+          <div class="signature-label">SIGNATURE OF AUTHORIZED AGENT OF CONTAINER STATION</div>
+        </div>
+        <div class="signature-cell">
+          <div class="signature-line"></div>
+          <div class="signature-label">SIGNATURE OF AUTHORIZED AGENT OF CARRIER</div>
+        </div>
+      </div>
+      <div class="signature-row">
+        <div class="signature-cell">
+          <div class="signature-line"></div>
+          <div class="signature-label">SIGNATURE OF CARTMAN</div>
+        </div>
+        <div class="signature-cell">
+          <div class="signature-line"></div>
+          <div class="signature-label">SIGNATURE OF CONTAINER STATION OPERATOR</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
